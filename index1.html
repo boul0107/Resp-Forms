@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Responsive Forms</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class="banner">
+			<h1>HTML Form</h1>
+			<h3>fill this out</h3>
+		</div>
+
+		<form action="process.php" method="POST">
+			<fieldset>
+				<legend></legend>
+				<div class="content">
+					<label for="user">Username</label>
+					<input type="text" name="firstName" id="user" placeholder="Username" value=""/>
+					<label for="email">E-mail</label>
+					<input type="text" name="email" id="email" placeholder="E-mail" value=""/>
+					<label for="url">Website</label>
+					<input type="text" name="url" id="url" placeholder="URL" value=""/>
+					<label for="pass">Password</label>
+					<input type="password" name="password" id="pass" placeholder="Password" maxlengh="10"/>
+				</div>
+				<input type="button" name="Submit" id="submit" value="Submit"/>
+			</fieldset>
+		</form>
+		
+	</body>
+</html>
