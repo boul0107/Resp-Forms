@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Lora);
+
+fieldset{
+	border: none;
+}
+label {
+	font-family: "Oswald", sans-serif;
+	display: none;
+}
+.banner {
+	background-color: darkblue;
+	padding: 1rem;
+	border-radius: 5px;
+	font-family: "Lora", serif;
+}
+.content{
+	float:left;
+	box-sizing: content-box;
+	width: 100%;
+	text-align: center;
+}
+#submit {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+@media(min-width:35em) and (max-width:60em){
+	label {
+		display: block;
+	}
+	.content{
+		float: left;
+		-webkit-column-count: 2;
+	}
+	.banner{
+		background-color: lightblue;
+	}
+	#submit {
+		text-align: center;
+	}
+}
+@media(min-width:60em){
+	label {
+		display: block;
+	}
+	.content{
+		float:left;
+		-webkit-column-count: 2;
+	}
+	.banner{
+		background-color: cornflowerblue;
+	}
+}
